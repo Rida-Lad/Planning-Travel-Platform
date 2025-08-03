@@ -3,7 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
-import Costs from './pages/costs';
+import Costs from './pages/Costs';
 import FoodOptions from './pages/Foods';
 import LodgingsOptions from './pages/Lodgings';
 import ActivitiesOptions from './pages/Activities';
