@@ -1,15 +1,18 @@
 import { useTheme } from '../context/ThemeContext';
 import { Bike , Car , Bus , TramFront , Plane  } from 'lucide-react';
+import {useNavigate} from 'react-router-dom';
 
 const Costs = () => {
   const { theme } = useTheme();
+  const navigate = useNavigate();
   
   const services = [
     {
       id: 1,
       title: "Travel with Motorcycle",
       subtitle: "Incredible Journeys",
-      icon: Bike 
+      icon: Bike,
+      route: "/costs/motorcycle"
     },
     {
       id: 2,
@@ -63,6 +66,7 @@ const Costs = () => {
             return (
               <div 
                 key={service.id} 
+                onClick={() => service.route && navigate(service.route)}
                 className={`relative p-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-amber-300 ${
                   theme === 'dark' ? 'bg-black shadow-sm shadow-white' : 'bg-white'
                 }`}

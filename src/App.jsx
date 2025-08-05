@@ -7,6 +7,8 @@ import Costs from './pages/Costs';
 import FoodOptions from './pages/Foods';
 import LodgingsOptions from './pages/Lodgings';
 import ActivitiesOptions from './pages/Activities';
+import Motocosts from './pages/calculatecosts/Moto';
+
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
             <Route path="/foods" element={<FoodOptions />} />
             <Route path="/lodgings" element={<LodgingsOptions />} />
             <Route path="/activities" element={<ActivitiesOptions />} />
+            <Route path="/costs/motorcycle" element={<Motocosts />} />
           </Routes>
           <Footer />
         </div>
