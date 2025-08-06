@@ -18,13 +18,15 @@ const Costs = () => {
       id: 2,
       title: "Travel with Car",
       subtitle: "Comfortable Rides",
-      icon: Car 
+      icon: Car,
+      route:"/costs/car"
     },
     {
       id: 3,
       title: "Travel with Bus",
       subtitle: "Affordable Options",
-      icon: Bus 
+      icon: Bus,
+      route: "/costs/bus"
     },
     {
       id: 4,
