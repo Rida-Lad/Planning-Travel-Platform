@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from '../../context/ThemeContext';
-import { Bus } from 'lucide-react';
+import { Plane } from 'lucide-react';
 import axios from 'axios';
 
-const BusesOptions = () => {
+const PlanesOptions = () => {
   const { theme } = useTheme();
   const [selectedCity, setSelectedCity] = useState('Marrakech'); // default
   const [options, setOptions] = useState([]);
 
   // Load default city (Marrakech) on first render
   useEffect(() => {
-    fetchData('Marrakech');
+    fetchData('Marrakesh');
   }, []);
 
   const fetchData = (city) => {
-    axios.get(`http://localhost:5000/api/bus-options`, {
+    axios.get(`http://localhost:5000/api/plane-options`, {
       params: { end_city: city }
     })
       .then(response => {
@@ -38,7 +38,7 @@ const BusesOptions = () => {
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Travel <span className="text-yellow-500">BusesOptions</span>
+            Travel <span className="text-yellow-500">PlanesOptions</span>
           </h2>
         </div>
 
@@ -56,12 +56,10 @@ const BusesOptions = () => {
                 : 'bg-white text-black border-gray-300 placeholder-gray-500'
               }`
             }>
-            <option value="Marrakech">Marrakech</option>
-            <option value="Rabat">Rabat</option>
-            <option value="Tanger">Tanger</option>
-            <option value="Casablanca">Casablanca</option>
-            <option value="Fes">Fes</option>
-            <option value="Agadir">Agadir</option>
+            <option value="Marrakesh">Marrakesh</option>
+            <option value="Tangier">Tangier</option>
+            <option value="Fez">Fez</option>
+            <option value="Oujda">Oujda</option>
           </select>
 
           <button
@@ -84,7 +82,7 @@ const BusesOptions = () => {
                 {/* Icon in top right corner */}
                 <div className={`absolute top-4 right-4 w-10 h-10 rounded-lg flex items-center justify-center ${theme === 'dark' ? 'bg-yellow-500' : 'bg-yellow-400'
                   }`}>
-                  <Bus size={20} className="text-black" />
+                  <Plane size={20} className="text-black" />
                 </div>
 
                 {/* Content */}
@@ -104,4 +102,4 @@ const BusesOptions = () => {
   );
 };
 
-export default BusesOptions;
+export default PlanesOptions;

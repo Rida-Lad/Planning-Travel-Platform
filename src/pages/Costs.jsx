@@ -32,13 +32,15 @@ const Costs = () => {
       id: 4,
       title: "Travel with Train",
       subtitle: "Scenic Routes",
-      icon: TramFront 
+      icon: TramFront,
+      route: "/costs/train"
     },
     {
       id: 5,
       title: "Travel with Plane",
       subtitle: "Fast Connections",
-      icon: Plane 
+      icon: Plane,
+      route: "/costs/plane"
     }
   ];
   

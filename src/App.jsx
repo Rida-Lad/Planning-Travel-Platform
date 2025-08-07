@@ -10,6 +10,8 @@ import ActivitiesOptions from './pages/Activities';
 import Motocosts from './pages/calculatecosts/Moto';
 import CarCosts from './pages/calculatecosts/Car';
 import BusesOptions from './pages/options_costs/Buses';
+import TrainsOptions from './pages/options_costs/Trains';
+import PlanesOptions from './pages/options_costs/Planes';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/costs/motorcycle" element={<Motocosts />} />
             <Route path="/costs/car" element={<CarCosts />} />
             <Route path="/costs/bus" element={<BusesOptions />} />
+            <Route path="/costs/train" element={<TrainsOptions />} />
+            <Route path="/costs/plane" element={<PlanesOptions />} />
           </Routes>
           <Footer />
         </div>
