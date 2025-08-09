@@ -19,8 +19,8 @@ const Navbar = () => {
     }`}>
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <div className="text-xl font-bold cursor-pointer" onClick={() => navigate('/')}>
-          <span className="text-yellow-500">MY-</span>SAFARI
+        <div style={{fontFamily:'Merienda'}} className="text-xl font-bold cursor-pointer" onClick={() => navigate('/')}>
+          <span className="text-yellow-500">MY</span>SAFARI
         </div>
         
         {/* Desktop Navigation */}

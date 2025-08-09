@@ -30,8 +30,8 @@ const HeroSection = () => {
     },
     {
       id: 4,
-      title: "Search for trips and activities",
-      description: "Explore various trips and activities to make your travel experience unforgettable.",
+      title: "Search for tours and activities",
+      description: "Explore various tours and activities to make your travel experience unforgettable.",
       icon: Activity, 
       route: '/activities'
     }
@@ -44,12 +44,12 @@ const HeroSection = () => {
         : 'bg-white text-black'
     }`}>
       <div className="text-center max-w-4xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Welcome to <span className="text-yellow-500">MY-SAFARI</span>
+        <h1 style={{fontFamily:'Merienda'}} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Welcome to <span className="text-yellow-500">MYSAFARI</span>
         </h1>
         
         <p className="mb-8 text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
-          Your one-stop solution for all travel needs. Calculate costs, find lodging, and discover exciting trips and activities with ease. Whether you're planning a short getaway or a long adventure, we've got you covered.
+          Your one-stop solution for all travel needs. Calculate costs, find lodging, and discover exciting tours and activities with ease. Whether you're planning a short getaway or a long adventure, we've got you covered.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16">

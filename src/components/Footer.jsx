@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-yellow-500">MY-</span>SAFARI
+            <div style={{fontFamily:'Merienda'}} className="text-2xl font-bold mb-4">
+              <span className="text-yellow-500">MY</span>SAFARI
             </div>
             <p className={`text-sm leading-relaxed ${
               theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
@@ -31,7 +31,7 @@ const Footer = () => {
             }`}>
               <li>Costs of travel</li>
               <li>Lodging options</li>
-              <li>Trips and activities</li>
+              <li>Tours and activities</li>
             </ul>
           </div>
           
@@ -53,10 +53,8 @@ const Footer = () => {
               theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
             }`}>
               <li>Help Center</li>
-              <li>Documentation</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
-              <li>Cookie Policy</li>
             </ul>
           </div>
         </div>
